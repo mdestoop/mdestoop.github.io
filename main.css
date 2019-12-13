@@ -1,0 +1,137 @@
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat (12, 1fr);
+  grid-template-rows: 10% 10% 40% 20% 10% 10%;
+  grid-template-areas:
+    "h h h h h h h h h h h l"
+    ". n n n n n n n n n n ."
+    ". g g g g g g g g g g ."
+    ". a a a a a a a a a a ."
+    ". m m m m m m m m m m ."
+    ". m m m m m m m m m m ."
+}
+
+img {
+  width: 300px;
+}
+
+.header {
+    grid-area: h;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 1000;
+    font-size: 70px;
+    font-style: normal;
+    color: navy;
+    padding-left: 2%;
+    
+}
+
+.logo {
+  grid-area: l;  
+  width: 70%;
+  padding-left: 50%;
+  
+}
+
+li {
+    display: inline;
+    grid-area: n;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    color: lightgrey;
+    overflow: hidden;
+    padding-left: 5%;
+}
+
+
+li a{
+    color: lightgrey;
+    text-align: center;
+}
+
+  li a:hover {
+    color: navy;
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px
+    padding-left:10%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: lightgrey;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: navy;
+  font-size: 40px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20%;
+}
+
+
+
+ .about {
+    grid-area: a;
+    background-color: navy;
+    color:white;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+     font-size: 1.5em;
+     padding-left: 20%;
+     padding-right: 20%;
+     padding-top: 30px;
+     padding-bottom: 10px;
+}
+
+.aboutme {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.music {
+    grid-area: m;
+    color:navy;
+    font: sans-serif;
+    font-size: 1.5em;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 20%;
+     padding-right: 20%;
+     padding-top: 30px;
+     padding-bottom: 10px;
+}
+
+.band {
+  width: 500px;
+}
+
+

@@ -1,0 +1,123 @@
+ .container {
+        /* enables css grid */
+        min-width: 600px
+        display: grid;
+        grid-gap: 10px;
+        margin: 10px 10px 10px 10px;
+        grid-template-columns: 1;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas:
+            "n"
+            "e"
+            "w"
+            "d"
+            "s"
+            "l"
+            "f";
+    }
+
+    .name {
+        grid-area: n;
+        background-color: navy;
+        color: white;
+        padding: 50px;
+    
+    }
+    
+    .education {
+        grid-area: e;
+        background-color: navy;
+        color: white;
+        padding: 20px;
+    
+    }
+    
+    .work-experience {
+        grid-area: w;
+        background-color: navy;
+        color: white;
+        padding: 20px;
+        padding-right: 110px;
+    
+    }
+    
+    .logo {
+        grid-area: l;
+        background-color: navy;
+    }
+    
+    /* md logo */
+    /* has blur effect */
+    svg {
+        margin: 20px;
+        transition: filter .5s ease-in-out;
+        filter:blur(1.5px);
+        width: 300px;
+        height: 300px;
+    }
+    
+    svg:hover {
+        filter: none;
+      }
+    
+    .design-experience {
+        grid-area: d;
+        padding: 10px;
+    }
+    
+    .skills {
+        grid-area: s;
+        padding: 20px;
+    }
+    
+    .other-experience {
+        grid-area: o;
+        padding: 20px;
+    }
+    
+    .footer {
+        grid-area: f;
+        padding: 20px;
+    }
+    
+    ul.a {
+        padding-left: 100px;
+        list-style: none;
+        list-style-position: outside;
+        font-family: lato;  
+    }
+    
+    ul.b {
+        padding-left: 100px;
+        list-style: circle;
+        list-style-position: outside;
+        font-family: lato;
+    }
+    
+    h1 {
+        font-size: 30pt;
+        font-family: Georgia;
+    }
+    
+    /* has blur effect */
+    h3 {
+        font-size: 15pt;
+        font-family: Georgia;
+        font-weight: bold;
+        padding: 20px;
+        margin: 20px;
+        transition: filter .5s ease-in-out;
+        filter:blur(1px);
+    }
+    
+    h3:hover {
+        filter: none;
+      }
+    
+    
+    .footer {
+        font-family: lato;
+        text-align: right;
+        font-size: 15pt;
+        font-weight: lighter;
+    }

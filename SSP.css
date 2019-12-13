@@ -1,0 +1,98 @@
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "h h h h h h h h h h h l"
+    "n n n n n n n n n n n n"
+    ". . i i i i i i i . . ."
+    ". . a a a a a a a . . ."
+    "m m m m m m m m m m m m"
+    
+}
+
+.image {
+  grid-area: i;
+  padding-left: 20%;
+  height: 600px;
+}
+
+.header {
+    grid-area: h;
+    display: flex;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    font-style: normal;
+    color: navy;
+    padding-left: 20px;
+    
+}
+
+.logo {
+  grid-area: l;
+  width: 350px;
+}
+
+li {
+  display: inline;
+  grid-area: n;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: lightgrey;
+  overflow: hidden;
+  padding-right: 20px;
+  word-spacing: 20%;
+}
+
+li a{
+  display: inline;
+  color: lightgrey;
+  text-align: center;
+}
+
+li a:hover {
+  color: navy;
+}
+
+
+.text {
+  color: navy;
+  font-size: 40px;
+  font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20%;
+}
+.about {
+  grid-area: a;
+  background-color: navy;
+  color:white;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+   font-size: 1.5em;
+   padding-left: 20%;
+   padding-right: 20%;
+   padding-top: 30px;
+   padding-bottom: 10px;
+}
+
+.music {
+    grid-area: m;
+    color:navy;
+    font: sans-serif;
+    font-size: 1.5em;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 20%;
+    
+}
